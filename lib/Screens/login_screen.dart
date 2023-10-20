@@ -1,8 +1,10 @@
 import 'package:app/Controllers/login_sign_up_controller.dart';
+import 'package:app/Screens/home_screen.dart';
 import 'package:app/custom.dart';
 import 'package:app/Screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key, Key? k});
@@ -114,19 +116,19 @@ class _LoginScreenState extends State<LoginScreen> {
                         logInSignUpController: logInController,
                       ),
                     ),
-                    SizedBox(
-                      height: screenHeight * 0.015,
-                    ),
-                    Text(
-                      "Forgot Password?",
-                      textAlign: TextAlign.right,
-                      style: TextStyle(
-                        fontFamily: 'Lato',
-                        fontSize: screenHeight * 0.018,
-                        fontWeight: FontWeight.w500,
-                        color: const Color(0xff9a63d7),
-                      ),
-                    ),
+                    // SizedBox(
+                    //   height: screenHeight * 0.015,
+                    // ),
+                    // Text(
+                    //   "Forgot Password?",
+                    //   textAlign: TextAlign.right,
+                    //   style: TextStyle(
+                    //     fontFamily: 'Lato',
+                    //     fontSize: screenHeight * 0.018,
+                    //     fontWeight: FontWeight.w500,
+                    //     color: const Color(0xff9a63d7),
+                    //   ),
+                    // ),
                     SizedBox(
                       height: screenHeight * 0.025,
                     ),

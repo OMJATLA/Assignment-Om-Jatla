@@ -2,7 +2,6 @@ import 'package:app/Controllers/login_sign_up_controller.dart';
 import 'package:app/custom.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/instance_manager.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key, Key? k});

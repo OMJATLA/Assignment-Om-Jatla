@@ -1,0 +1,80 @@
+# ninja log v5
+5367	5467	0	CMakeFiles/install.util	d5e7658831bcae5c
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	5925473caefc71dc
+5238	5367	1697777818729153485	intermediates_do_not_run/app	73479ea81558b6cd
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_view.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	5925473caefc71dc
+13303	16309	1697775205733787808	CMakeFiles/app.dir/main.cc.o	d3ccc583f43c1a21
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/libflutter_linux_gtk.so	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	5925473caefc71dc
+4538	5238	1697777818597156033	CMakeFiles/app.dir/my_application.cc.o	504bfe8fea1848e5
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_value.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_engine.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	5925473caefc71dc
+4538	5088	1697777818449158891	CMakeFiles/app.dir/flutter/generated_plugin_registrant.cc.o	6541bcff643492d2
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	5925473caefc71dc
+1	4538	0	flutter/_phony_	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	5925473caefc71dc
+1	4538	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/libflutter_linux_gtk.so	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_engine.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_value.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_view.h	5925473caefc71dc
+3	4160	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	5925473caefc71dc
+3	4160	0	flutter/_phony_	5925473caefc71dc
+4160	4579	1697777838824770224	CMakeFiles/app.dir/flutter/generated_plugin_registrant.cc.o	6541bcff643492d2
+4160	4610	1697777838856769622	CMakeFiles/app.dir/my_application.cc.o	504bfe8fea1848e5
+4610	4718	1697777838964767586	intermediates_do_not_run/app	73479ea81558b6cd
+4718	4816	0	CMakeFiles/install.util	d5e7658831bcae5c
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/libflutter_linux_gtk.so	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_engine.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_value.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/fl_view.h	5925473caefc71dc
+5	4323	0	/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	5925473caefc71dc
+5	4323	0	flutter/_phony_	5925473caefc71dc
+4323	4930	1697778105669693223	CMakeFiles/app.dir/flutter/generated_plugin_registrant.cc.o	6541bcff643492d2
+4323	4955	1697778105701700888	CMakeFiles/app.dir/my_application.cc.o	504bfe8fea1848e5
+4956	5074	1697778105821729631	intermediates_do_not_run/app	73479ea81558b6cd
+5074	5221	0	CMakeFiles/install.util	d5e7658831bcae5c

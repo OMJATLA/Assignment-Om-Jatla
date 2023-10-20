@@ -1,0 +1,17 @@
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/app
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/Background.png
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/Vector.png
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Poppins/Poppins-Bold.ttf
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Poppins/Poppins-Light.ttf
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Lato/Lato-Regular.ttf
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
+/home/omjatla/Desktop/E-Commerce Assignment/Assignment-Om-Jatla/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf

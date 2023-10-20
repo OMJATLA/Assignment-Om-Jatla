@@ -1,4 +1,7 @@
+import 'package:app/Screens/login_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,6 +9,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: InkWell(
+            onTap: () async {
+              SharedPreferences sharedPreferences =
+                  await SharedPreferences.getInstance();
+              sharedPreferences.clear();
+              Get.offAll(LoginScreen());
+            },
+            child: Icon(Icons.logout)),
+      ),
       body: Center(
         child: Text("hello"),
       ),

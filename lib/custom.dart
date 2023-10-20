@@ -47,9 +47,9 @@ class CustomTextField extends StatelessWidget {
   final String labelText;
   final String labelValidator;
   final bool obscureText;
-  LogInSignUpController? logInSignUpController;
+  final LogInSignUpController? logInSignUpController;
 
-  CustomTextField(
+  const CustomTextField(
       {Key? key,
       required this.controller,
       required this.labelText,
@@ -71,7 +71,7 @@ class CustomTextField extends StatelessWidget {
           textAlign: TextAlign.left,
           controller: controller,
           obscureText: obscureText,
-          cursorColor: Color.fromRGBO(201, 163, 245, 1),
+          cursorColor: const Color.fromRGBO(201, 163, 245, 1),
           decoration: InputDecoration(
             isDense: true,
             filled: true,
@@ -90,7 +90,7 @@ class CustomTextField extends StatelessWidget {
                         logInSignUpController!.obscureText.value
                             ? Icons.visibility_off
                             : Icons.visibility,
-                        color: Color(0xff9a63d7)),
+                        color: const Color(0xff9a63d7)),
                   )
                 : const SizedBox(),
             hintText: labelText,

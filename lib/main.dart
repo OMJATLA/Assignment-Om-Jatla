@@ -1,4 +1,3 @@
-import 'package:app/Screens/login_screen.dart';
 import 'package:app/spalsh_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

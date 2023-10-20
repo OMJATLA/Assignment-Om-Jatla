@@ -4,7 +4,6 @@ import 'package:app/Screens/home_screen.dart';
 import 'package:app/Screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -20,13 +19,13 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
 
-    Timer.periodic(Duration(seconds: 2), (timer) async {
+    Timer.periodic(const Duration(seconds: 2), (timer) async {
       SharedPreferences sharedPreferences =
           await SharedPreferences.getInstance();
       if (sharedPreferences.getInt('id') != null) {
-        Get.offAll(HomeScreen());
+        Get.offAll(const HomeScreen());
       } else {
-        Get.offAll(LoginScreen());
+        Get.offAll(const LoginScreen());
       }
       timer.cancel();
     });
@@ -34,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: Text("Welcome"),
       ),

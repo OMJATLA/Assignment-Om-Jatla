@@ -15,11 +15,11 @@ class HomeScreen extends StatelessWidget {
               SharedPreferences sharedPreferences =
                   await SharedPreferences.getInstance();
               sharedPreferences.clear();
-              Get.offAll(LoginScreen());
+              Get.offAll(const LoginScreen());
             },
-            child: Icon(Icons.logout)),
+            child: const Icon(Icons.logout)),
       ),
-      body: Center(
+      body: const Center(
         child: Text("hello"),
       ),
     );

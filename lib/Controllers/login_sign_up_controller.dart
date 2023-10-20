@@ -1,0 +1,91 @@
+import 'dart:convert';
+
+import 'package:app/Screens/home_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:http/http.dart' as http;
+
+class LogInSignUpController extends GetxController {
+  RxBool loader = false.obs;
+  RxBool obscureText = true.obs;
+  List errorList = [];
+  void createUser(
+      {required String name,
+      required String email,
+      required String password}) async {
+    var url = "https://api.escuelajs.co/api/v1/users/";
+
+    try {
+      var response = await http.post(Uri.parse(url), body: {
+        "name": name,
+        "email": email,
+        "password": password,
+        "avatar": "https://imgur.com/GwylUgV",
+      });
+
+      print(response.statusCode);
+      print(response.body);
+
+      if (response.statusCode == 201) {
+        Get.back();
+        Get.snackbar("Success", "Account Created",
+            backgroundColor: Colors.green);
+      } else {
+        errorList = jsonDecode(response.body)['message'];
+        Get.defaultDialog(
+            confirmTextColor: Colors.white,
+            textConfirm: "ok",
+            onConfirm: () => Get.back(),
+            title: "Errors",
+            titleStyle: TextStyle(color: Colors.red),
+            buttonColor: Color(0xff9a63d7),
+            content: Column(
+              children: [
+                for (var i = 0; i < errorList.length; i++)
+                  Text(
+                    errorList[i] +
+                        (errorList[i] == 'email must be an email'
+                            ? "\nexample@gmail.com"
+                            : ""),
+                    textAlign: TextAlign.center,
+                  ).paddingAll(5)
+              ],
+            ));
+      }
+      loader.value = false;
+    } catch (e) {
+      Get.snackbar("Error", "Something went wrong\n Check internet connection",
+          backgroundColor: Colors.red);
+    }
+  }
+
+  loginUser({required String email, required String password}) async {
+    var url = "https://api.escuelajs.co/api/v1/auth/login";
+
+    try {
+      var response = await http
+          .post(Uri.parse(url), body: {"email": email, "password": password});
+
+      print(response.statusCode);
+      print(response.body);
+
+      if (response.statusCode == 200 || response.statusCode == 201) {
+        Get.to(HomeScreen());
+      } else {
+        Get.defaultDialog(
+            confirmTextColor: Colors.white,
+            textConfirm: "ok",
+            onConfirm: () => Get.back(),
+            title: "Error",
+            titleStyle: TextStyle(color: Colors.red),
+            buttonColor: Color(0xff9a63d7),
+            middleText: "Unauthorized User");
+      }
+
+      loader.value = false;
+    } catch (e) {
+      Get.snackbar("Error", "Something went wrong\n Check internet connection",
+          backgroundColor: Colors.red);
+    }
+  }
+}

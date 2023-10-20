@@ -1,6 +1,8 @@
+import 'package:app/Controllers/login_sign_up_controller.dart';
 import 'package:app/custom.dart';
 import 'package:app/Screens/signup_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key, Key? k});
@@ -14,6 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final double verticalSpacing = 0.025;
+  LogInSignUpController logInController = LogInSignUpController();
 
   @override
   Widget build(BuildContext context) {
@@ -102,11 +105,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(
                       height: screenHeight * 0.005,
                     ),
-                    CustomTextField(
-                      controller: passwordController,
-                      labelText: 'Password',
-                      labelValidator: 'Enter Password',
-                      obscureText: true,
+                    Obx(
+                      () => CustomTextField(
+                        controller: passwordController,
+                        labelText: 'Password',
+                        labelValidator: 'Enter Password',
+                        obscureText: logInController.obscureText.value,
+                        logInSignUpController: logInController,
+                      ),
                     ),
                     SizedBox(
                       height: screenHeight * 0.015,
@@ -124,11 +130,19 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(
                       height: screenHeight * 0.025,
                     ),
-                    ReusableElevatedButton(
-                      buttonText: 'Login',
-                      onPressed: () {
-                        _formKey.currentState!.validate();
-                      },
+                    Obx(
+                      () => ReusableElevatedButton(
+                        buttonText: 'Login',
+                        loader: logInController.loader.value,
+                        onPressed: () {
+                          if (_formKey.currentState!.validate()) {
+                            logInController.loader.value = true;
+                            logInController.loginUser(
+                                email: emailController.text,
+                                password: passwordController.text);
+                          }
+                        },
+                      ),
                     ),
                     SizedBox(
                       height: screenHeight * 0.025,

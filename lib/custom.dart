@@ -1,3 +1,4 @@
+import 'package:app/Controllers/login_sign_up_controller.dart';
 import 'package:flutter/material.dart';
 
 class ReusableElevatedButton extends StatelessWidget {
@@ -46,14 +47,16 @@ class CustomTextField extends StatelessWidget {
   final String labelText;
   final String labelValidator;
   final bool obscureText;
+  LogInSignUpController? logInSignUpController;
 
-  const CustomTextField({
-    Key? key,
-    required this.controller,
-    required this.labelText,
-    required this.labelValidator,
-    this.obscureText = false,
-  }) : super(key: key);
+  CustomTextField(
+      {Key? key,
+      required this.controller,
+      required this.labelText,
+      required this.labelValidator,
+      this.obscureText = false,
+      this.logInSignUpController})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -68,13 +71,27 @@ class CustomTextField extends StatelessWidget {
           textAlign: TextAlign.left,
           controller: controller,
           obscureText: obscureText,
+          cursorColor: Color.fromRGBO(201, 163, 245, 1),
           decoration: InputDecoration(
             isDense: true,
             filled: true,
             fillColor: const Color(0xfff8f4fd),
             isCollapsed: true,
             suffixIcon: labelText == 'Password'
-                ? Image.asset('assets/images/Vector.png')
+                ? InkWell(
+                    onTap: () {
+                      if (logInSignUpController!.obscureText.value) {
+                        logInSignUpController!.obscureText.value = false;
+                      } else {
+                        logInSignUpController!.obscureText.value = true;
+                      }
+                    },
+                    child: Icon(
+                        logInSignUpController!.obscureText.value
+                            ? Icons.visibility_off
+                            : Icons.visibility,
+                        color: Color(0xff9a63d7)),
+                  )
                 : const SizedBox(),
             hintText: labelText,
             hintStyle: const TextStyle(
@@ -89,7 +106,8 @@ class CustomTextField extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(20.0)),
             ),
             focusedBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.transparent, width: 2.0),
+              borderSide: BorderSide(
+                  color: Color.fromRGBO(201, 163, 245, 1), width: 2.0),
               borderRadius: BorderRadius.all(Radius.circular(20.0)),
             ),
             enabledBorder: const OutlineInputBorder(

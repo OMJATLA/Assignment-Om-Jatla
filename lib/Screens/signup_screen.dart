@@ -1,5 +1,8 @@
+import 'package:app/Controllers/login_sign_up_controller.dart';
 import 'package:app/custom.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/instance_manager.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key, Key? k});
@@ -10,6 +13,7 @@ class SignUpScreen extends StatefulWidget {
 
 class _SignUpScreenState extends State<SignUpScreen> {
   final _formKey = GlobalKey<FormState>();
+  LogInSignUpController signUpController = LogInSignUpController();
   TextEditingController usernameController = TextEditingController();
   TextEditingController mobileNoController = TextEditingController();
   TextEditingController emailController = TextEditingController();
@@ -30,7 +34,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           Expanded(
             flex: 0,
             child: Container(
-              height: screenHeight * 0.37,
+              height: screenHeight * 0.40,
               width: double.infinity,
               decoration: const BoxDecoration(
                 image: DecorationImage(
@@ -73,6 +77,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               key: _formKey,
               child: SingleChildScrollView(
                 child: Container(
+                  // height: screenHeight * 0.58,
                   padding:
                       const EdgeInsets.symmetric(horizontal: 25, vertical: 40),
                   decoration: const BoxDecoration(
@@ -100,12 +105,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         labelValidator: 'Enter Username',
                         controller: usernameController,
                       ),
-                      SizedBox(height: screenHeight * verticalSpacing),
-                      CustomTextField(
-                        controller: mobileNoController,
-                        labelText: 'Mobile no',
-                        labelValidator: 'Enter Mobile no',
-                      ),
+                      // SizedBox(height: screenHeight * verticalSpacing),
+                      // CustomTextField(
+                      //   controller: mobileNoController,
+                      //   labelText: 'Mobile no',
+                      //   labelValidator: 'Enter Mobile no',
+                      // ),
                       SizedBox(height: screenHeight * verticalSpacing),
                       CustomTextField(
                         controller: emailController,
@@ -113,18 +118,31 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         labelValidator: 'Enter Email',
                       ),
                       SizedBox(height: screenHeight * verticalSpacing),
-                      CustomTextField(
-                        controller: passwordController,
-                        labelText: 'Password',
-                        labelValidator: 'Enter Password',
-                        obscureText: true,
+                      Obx(
+                        () => CustomTextField(
+                          controller: passwordController,
+                          labelText: 'Password',
+                          labelValidator: 'Enter Password',
+                          obscureText: signUpController.obscureText.value,
+                          logInSignUpController: signUpController,
+                        ),
                       ),
                       SizedBox(height: screenHeight * 0.025),
-                      ReusableElevatedButton(
-                          buttonText: 'Sign Up',
-                          onPressed: () {
-                            _formKey.currentState!.validate();
-                          }),
+                      Obx(
+                        () => ReusableElevatedButton(
+                            buttonText: 'Sign Up',
+                            loader: signUpController.loader.value,
+                            onPressed: () {
+                              if (_formKey.currentState!.validate()) {
+                                signUpController.loader.value = true;
+                                signUpController.createUser(
+                                  name: usernameController.text,
+                                  email: emailController.text,
+                                  password: passwordController.text,
+                                );
+                              }
+                            }),
+                      ),
                       SizedBox(height: screenHeight * 0.025),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
